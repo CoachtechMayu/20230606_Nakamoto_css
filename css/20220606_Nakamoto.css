@@ -1,0 +1,59 @@
+.main {
+    position: relative;                 /* Position相対 */
+    max-width: 1200px;                   /* Block */
+    height: 700px;
+}
+
+
+.main__content{
+    display: flex;                      /* 親要素 */
+    justify-content: space-between;     /* 左右に子要素を配置 */
+}
+
+.main__subtitle{
+    margin: 20px 20px;                  /* 上下左右余白20px */
+    font-size: 25px;
+    color: rgb(0, 0, 134);
+}
+
+.main__inform li {
+    margin: 20px 20px;                  /* 上下左右余白20px */
+    display: inline-block;              /* リンク横並び */
+    font-weight: bold;
+}
+
+.main__inform {
+    list-style-type: none;               /* 先頭マーク消去 */
+}
+
+
+.main__inform li a {
+    text-decoration: none;               /* 下線消去 */
+    color: rgb(0, 0, 134);
+}
+
+h1.main__title {
+    position: absolute;
+    bottom: 175px;
+    font-size: 50px;
+    font-weight: 400;
+
+}
+.main__bluebox {
+    position: absolute;
+    width: 900px;
+    height: 150px;
+    bottom: 30px;
+    left: 0px;
+    z-index: 1;
+    background: rgb(0, 0, 134);
+}
+
+.main__img img {
+    width: 55%;
+    height: auto;
+    position: absolute;
+    right: 0px;
+    bottom: 100px;
+    z-index: 10;                        /* 重なり優先 */
+}
